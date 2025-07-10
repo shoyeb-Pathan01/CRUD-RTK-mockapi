@@ -9,6 +9,8 @@ import { store } from './redux/store.js'
 createRoot(document.getElementById('root')).render(
   <Provider store={store}>
     <BrowserRouter>
+      <ToastContainer position="top-center"
+        autoClose={3000} /> 
       <App />
     </BrowserRouter>
   </Provider >
